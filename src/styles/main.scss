@@ -1,0 +1,75 @@
+@import 'colors';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: $primaryColor;
+  font-size: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: #27aedb;
+  text-align: center;
+}
+
+.wrapperPage {
+  padding: 20px;
+  background: $greyBackground;
+}
+.popularStoreContainer {
+  background: $white;
+  max-width: 1336px;
+  margin: 0 auto;
+  min-height: 100px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  // height: 100%;
+  // min-height: 20em;
+  // position: relative;
+}
+.categoriesContainer {
+}
+
+.navTabs {
+  font-size: 14px;
+}
+
+.categoryTab {
+  text-align: center;
+  border-left: 1px solid $greyBackground;
+}
+
+.scroll {
+  white-space: nowrap; /* [1] */
+  overflow-x: auto; /* [2] */
+  -webkit-overflow-scrolling: touch; /* [3] */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-item {
+  padding: 12px 16px 13px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(#727c87, 0.2);
+  }
+}
+
+.nav-item,
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
